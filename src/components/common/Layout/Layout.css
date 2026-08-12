@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.layout__main {
+  flex: 1;
+  margin-top: 64px; /* Height of navbar */
+  padding: var(--space-lg) var(--space-md);
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}

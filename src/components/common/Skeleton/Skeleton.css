@@ -1,0 +1,111 @@
+/* Note: Assuming .skeleton animation is defined in index.css as requested, but providing fallback here just in case */
+.skeleton {
+  background-color: var(--color-surface-hover);
+  animation: skeleton-pulse 1.5s infinite ease-in-out;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes skeleton-pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.skeleton-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-card__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0;
+}
+
+.skeleton-card__content {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skeleton-card__title {
+  height: 20px;
+  width: 80%;
+}
+
+.skeleton-card__text {
+  height: 16px;
+  width: 60%;
+}
+
+.skeleton-card__badge {
+  height: 24px;
+  width: 30%;
+  border-radius: var(--radius-full);
+  margin-top: var(--space-sm);
+}
+
+.skeleton-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.skeleton-list-item__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-list-item__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skeleton-list-item__title {
+  height: 16px;
+  width: 40%;
+}
+
+.skeleton-list-item__subtitle {
+  height: 14px;
+  width: 25%;
+}
+
+.skeleton-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.skeleton-detail__header {
+  height: 200px;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-detail__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skeleton-detail__line {
+  height: 16px;
+  width: 100%;
+}
+
+.skeleton-detail__line.w-75 {
+  width: 75%;
+}

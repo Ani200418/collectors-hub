@@ -1,0 +1,61 @@
+.collection-tabs {
+  display: flex;
+  gap: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-xl);
+}
+
+.collection-tabs__button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: -1px;
+}
+
+.collection-tabs__button:hover {
+  color: var(--color-text);
+  background-color: var(--color-surface-hover);
+}
+
+.collection-tabs__button--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.collection-tabs__badge {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+}
+
+.collection-tabs__button--active .collection-tabs__badge {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .collection-tabs {
+    flex-direction: column;
+    gap: 0;
+  }
+  .collection-tabs__button {
+    width: 100%;
+    justify-content: center;
+  }
+}
